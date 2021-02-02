@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?r3swsp');
+  src:  url('../fonts/icomoon.eot?r3swsp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?r3swsp') format('truetype'),
+    url('../fonts/icomoon.woff?r3swsp') format('woff'),
+    url('../fonts/icomoon.svg?r3swsp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  font-size: 10px;
+  content: "\e902";
+  color: #BC9CFF;
+  position: absolute;
+  top: 4px;
+  animation: heart 5s infinite alternate;
+  left: 2px;
+}
+.icon-city:before {
+  content: "\e900";
+}
+.icon-smile:before {
+  content: "\e901";
+}
+.icon-smile:before, .icon-city:before{
+  font-size: 48px;
+  line-height: 1.2;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes heart{
+  0%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(5deg);
+  }
+}
